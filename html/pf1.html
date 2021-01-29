@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="theme-color" content="#E83B78" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#E83B78">
+        <meta name="msapplication-navbutton-color" content="#E83B78">
+
+        <!-- Primary Meta Tags -->
+        <title>Portfólio</title>
+        <meta name="title" content="Portfólio - Alexandre Lemos da Silva">
+        <meta name="description" content="Portfólio apresentado como componente parcial de avaliação da disciplina Terminologia e Documentação em Saúde, ministrada por Adriana Paz e Graciele Linch.">
+
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div id="logo_infobio"></div>
+        </header>
+
+        <p align="center"><iframe id="pdfframe" src="teste1.pdf" style="width:70%; height:1200px;" frameborder="2"></iframe></p>
+
+        <footer>
+            <div id="info_cab">
+                <div id="logo_ufcspa"></div>
+                <div class="linha_div"></div>
+                <div class="dados">
+                    <div class="titulo">Alexandre Lemos</div>
+                    <div class="texto">Informática Biomédica</div>
+                    <div class="texto">2º semestre</div>
+                    <div class="texto2">Universidade Federal de Ciências<br>da Saúde de Porto Alegre</div>
+                </div>
+            </div>
+
+            <div id="botoes_links">
+                <div class="rd_botao" onclick="abrir('../ufcspa.html')">UFCSPA</div>
+                <div class="rd_botao" onclick="abrir('../infobio.html')">INFOBIO</div>
+            </div>
+        </footer>
+
+    </body>
+</html>
+
+<script>
+    function abrir(pagina) {
+        document.location.href = pagina;
+    }
+</script>

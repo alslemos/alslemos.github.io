@@ -3,7 +3,6 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100%;
-    overflow: hidden;
 }
 
 body{
@@ -12,7 +11,6 @@ body{
     overflow-x: hidden;
     animation: animBackBody 50s ease infinite;
     height: 100%;
-    overflow: hidden;
 }
 
 #carrossel {
@@ -149,7 +147,7 @@ header {
     background-color: #E2F0FF;
     border-radius: 18px;
     
-    color: #1D436E;
+    color: rgb(29, 67, 110);
     font-family: "Roboto Condensed";
     text-align: center;
     
@@ -302,4 +300,50 @@ footer {
 
 .rd_botao + .rd_botao {
     margin-left: 16px;
+}
+
+#pdfframe{
+    display: block;
+    text-align: center;
+    
+    border: 0px none #ffffff;
+    
+    box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    
+    margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border: 0px none #ffffff;
+  border-radius: 27px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aeaeae;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9e9e9e;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:active {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
