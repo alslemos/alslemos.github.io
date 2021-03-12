@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#E83B78" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E83B78">
+    <meta name="msapplication-navbutton-color" content="#E83B78">
+    
+    <!-- Primary Meta Tags -->
+    <title>Portfólio</title>
+    <meta name="title" content="Portfólio - Alexandre Lemos da Silva">
+    <meta name="description" content="Portfólio apresentado como componente parcial de avaliação da disciplina Terminologia e Documentação em Saúde, ministrada por Adriana Paz e Graciele Linch.">
+        
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div  id="logo_infobio" onclick="abrir('main.html')"></div>
+    </header>
+    
+    <div id="carrosel">
+        <div class="cards">
+          <div class="animacao">                   
+              
+            <div class="first">
+                <div class="card">
+                    <div class="img a"></div>
+                    <div class="titulo">Portfólio 1: Prontuário</div>
+                    <div class="desc">Objetivo da aula: Conhecer o prontuário do paciente, como documento que contém os registros dos profissionais sobre a situação de saúde dos pacientes no sistema brasileiro e mundial.</div>
+                    <div class="botao" onclick="abrir('html/pf1.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+              
+            <div>
+                <div class="card">
+                    <div class="img b"></div>
+                    <div class="titulo">Portfólio 2: Perspectivas</div>
+                    <div class="desc">Identificar a realidade dos prontuários eletrônicos no Brasil, permitindo a reflexão sobre  suas principais vantagens e desvantagens. Bem como compreender as bases que são atualizadas por ela.</div>
+                    <div class="botao" onclick="abrir('html/pf2.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+            
+            <div>
+                <div class="card">
+                    <div class="img c"></div>
+                    <div class="titulo">Portfólio 3: Superestruturas</div>
+                    <div class="desc">Discutir a relevância de se reconhecer terminologias e estruturas textuais para a implementação, organização e uso de sistemas de informação. Ainda, recuperação de dados textuais em saúde. </div>
+                    <div class="botao" onclick="abrir('html/pf3.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+              
+            <div>
+                <div class="card">
+                    <div class="img d"></div>
+                    <div class="titulo">Portfólio 4: Organização</div>
+                    <div class="desc">Identificar diferentes padrões de registros e bases de dados para as diferentes áreas da saúde. Aqui, abordo padrões de terminologia, em especial utilizados na área da psicologia contemporânea no Brasil </div>
+                    <div class="botao" onclick="abrir('html/pf4.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+              
+            <div>
+                <div class="card">
+                    <div class="img e"></div>
+                    <div class="titulo">Portfólio 5: Usos</div>
+                    <div class="desc">Identificar as principais funções do prontuário do paciente enquanto assistência clínica/hospitalar, ensino e pesquisa, citando suas consequências. Para debate: exemplos de pesquisas clínicas </div>
+                    <div class="botao" onclick="abrir('html/pf5.html')">VISUALIZAR</div>
+                </div>
+            </div>
+              
+            <div>
+                <div class="card">
+                    <div class="img f"></div>
+                    <div class="titulo">Portfólio 6: Ética</div>
+                    <div class="desc">Reconhecer as atribuições desse profissional no cerne da equipe de saúde, quanto ao registro de informações geradas pelo próprio e a visualização de informações registradas por outros profissionais. </div>
+                    <div class="botao" onclick="abrir('html/pf6.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+              
+            <div>
+                <div class="card">
+                    <div class="img g"></div>
+                    <div class="titulo">Portfólio 7: Certificação </div>
+                    <div class="desc">Compreender os conceitos, normas e condições de certificação do prontuário para manter o sigilo das informações proveniente da prática dos profissionais de saúde quanto aos registros. </div>
+                    <div class="botao" onclick="abrir('html/pf7.html')">VISUALIZAR</div>
+                </div>
+            </div> 
+             
+            <!-- cut -->
+          </div>
+        </div>
+        
+        <div id="seta"></div>
+    </div>   
+    
+    <footer>
+        <div id="info_cab">
+            <div id="logo_ufcspa"></div>
+            <div class="linha_div"></div>
+            <div class="dados">
+                <div class="titulo">Alexandre Lemos</div>
+                <div class="texto">Informática Biomédica</div>
+                <div class="texto">2º semestre</div>
+                <div class="texto2">Universidade Federal de Ciências<br>da Saúde de Porto Alegre</div>
+            </div>
+        </div>
+        
+        <div id="botoes_links">
+            <div class="rd_botao" onclick="abrir('https://horizontes.sbc.org.br/index.php/2020/12/infoque-conhecendo-o-incompreendido-curso-de-informatica-biomedica/')">INFOBIO</div>
+            <div class="rd_botao" onclick="abrir('https://www.ufcspa.edu.br/sobre-a-ufcspa/quem-somos')">UFCSPA</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+</script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script>
+    window.onload = function () {
+        $("html").css('height', 'auto');
+        $("html").css('overflow', 'auto');
+
+        $("body").css('height', 'auto');
+       
+        $("#onLoading").css('opacity', '0');  
+        initSmoothScrolling('.cards','smoothscroll');
+        
+        setTimeout(function() {
+            $('#onLoading').css('display', 'none');
+        }, 1000);
+    };    
+    
+    function abrir(pagina) {
+        document.location.href = pagina;
+    }
+</script>

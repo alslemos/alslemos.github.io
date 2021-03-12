@@ -1,0 +1,349 @@
+html {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    background-color: #E7ECF2;
+    margin: 0;
+    overflow-x: hidden;
+    animation: animBackBody 50s ease infinite;
+    height: 100%;
+}
+
+#carrossel {
+    position: relative;
+    width: 100%;
+}
+
+.animacao {
+  width: auto;
+  height: 100px;
+  font-size: 0px;
+}
+
+.animacao > div {
+  display: inline-block;
+  width: auto;
+  float: none;
+  padding: 0 10px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+}
+
+#logo_infobio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 150px;
+    
+    background-image: url(../img/logo_infobio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cards {
+    overflow: hidden;
+    width: 100%;
+    
+    margin-top: -28px;
+    padding-top: 28px;
+    height: 530px;
+}
+
+.card {
+    width: 260px;
+    height: 474px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+}
+
+.card .img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    width: 260px;
+    height: 200px;
+    
+    background-color: #E2F0FF;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.card .a {
+    background-image: url(../img/noticias_min/img1.png)
+}
+
+.card .b {
+    background-image: url(../img/noticias_min/img2.png)
+}
+
+.card .c {
+    background-image: url(../img/noticias_min/img3.png)
+}
+
+.card .d {
+    background-image: url(../img/noticias_min/img4.png)
+}
+
+.card .e {
+    background-image: url(../img/noticias_min/img5.png)
+}
+
+.card .f {
+    background-image: url(../img/noticias_min/img6.png)
+}
+
+.card .g {
+    background-image: url(../img/noticias_min/img7.png)
+}
+
+.card .titulo {
+    position: relative;
+    color: #1D436E;
+    width: 100%;
+    
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-weight: 800;
+    
+    padding-top: 8px;
+    padding-left: 14px;
+}
+
+.card .desc {
+    position: relative;
+    margin: 0px;
+    color: #1D436E;
+    width: 90%;
+    
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    font-weight: 400;
+    
+    padding-top: 12px;
+    padding-left: 14px;
+}
+
+.card .botao {
+    width: 90%;
+    height: 46px;
+    
+    
+    position: relative;
+    left: 14px;
+    top: 26px;
+    
+    
+    
+    background-color: #E2F0FF;
+    border-radius: 18px;
+    
+    color: rgb(29, 67, 110);
+    font-family: "Roboto Condensed";
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 18px;
+    
+    cursor: pointer;
+    
+    transition: ease 0.25s;
+}
+
+.card .botao:hover{
+    top: 24px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#seta {
+    width: 20px;
+    height: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: url(../img/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    animation: animSeta 2s infinite;
+}
+
+@keyframes animSeta {
+    0%, 100% {
+        margin-top: 0px;
+        margin-bottom: 32px;
+    }
+    50% {
+        margin-top: -12px;
+        margin-bottom: 44px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    
+    padding-top: 50px;
+    
+    background-color: #ECF0F5;
+}
+
+#info_cab {
+    width: 415px;
+    height: 250px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#logo_ufcspa {
+    width: 160px;
+    height: 250px;
+    
+    background-image: url(../img/logo_ufcspa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linha_div {
+    width: 1px;
+    height: 140px;
+    
+    margin-top: calc((250px - 140px)/2);
+    
+    background-color: #9A9A9A;
+    margin-left: 20px;
+}
+
+#info_cab .dados {
+    margin-left: 20px;
+    margin-top: 56px;
+    
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+}
+
+#info_cab .dados div {
+    margin-bottom: 8px;
+}
+
+.dados .titulo {
+    color: #1D436E;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dados .texto {
+    color: #222222;
+    font-weight: 400;
+}
+
+.dados .texto2 {
+    color: #696969;
+    font-weight: 400;
+}
+
+#botoes_links {
+    width: 223px;
+    height: 32px;
+    
+    margin-top: -14px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    align-items: center;
+}
+
+.rd_botao {
+    height: 27px;
+    width: auto;
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 5px;
+    
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+    font-size: 16px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 26px;
+    border-color: #1D436E;
+    color: #1D436E;
+    
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.rd_botao:hover {
+    background-color: #1D436E;
+    color: #FFFFFF;
+}
+
+.rd_botao + .rd_botao {
+    margin-left: 16px;
+}
+
+#pdfframe{
+    display: block;
+    text-align: center;
+    
+    border: 0px none #ffffff;
+    
+    box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    
+    margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border: 0px none #ffffff;
+  border-radius: 27px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aeaeae;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9e9e9e;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:active {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
